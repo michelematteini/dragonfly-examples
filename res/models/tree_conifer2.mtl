@@ -1,0 +1,15 @@
+newmtl fir_branches
+Ns 2
+Kd 1.000000000000 1.000000000000 1.000000000000 
+map_Kd textures\models\tree_conifer2\fir2_branches.dds
+map_d textures\models\tree_conifer2\fir2_branches.dds
+norm textures\models\tree_conifer2\fir2_branches_nrm.dds
+cull none
+
+newmtl fir_trunk
+Kd 1.000000 1.000000 1.000000
+Ns 10
+map_Kd textures\models\tree_conifer2\fir2_trunk.dds
+norm textures\models\tree_conifer2\fir2_trunk_nrm.dds
+
+

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProceduralMeshDescription xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ProceduralTreeDescr">
+  <Seed>820417104</Seed>
+  <TrunkMaterial>
+    <Albedo>
+      <X>0.8</X>
+      <Y>0.75</Y>
+      <Z>0.7</Z>
+    </Albedo>
+    <AlbedoMapPath>textures/models/proc/tree_bark1_albedo.dds</AlbedoMapPath>
+    <UseTransparencyFromAlbedo>false</UseTransparencyFromAlbedo>
+    <ClipTransparency>true</ClipTransparency>
+    <NormalMapPath>textures/models/proc/tree_bark1_norm.dds</NormalMapPath>
+    <Roughness>0.7</Roughness>
+    <RoughtnessMap />
+    <DoubleSided>false</DoubleSided>
+  </TrunkMaterial>
+  <TrunkRadius>0.02</TrunkRadius>
+  <TreeMaxHeight>3.0</TreeMaxHeight>
+  <TreeStartPosition>
+    <X>25</X>
+    <Y>0</Y>
+    <Z>0</Z>
+  </TreeStartPosition>
+  <TrunkMaxAngleRadians>0.0</TrunkMaxAngleRadians>
+  <GroundLevel>0.02</GroundLevel>
+  <TrunkTexCoordMul>0.02</TrunkTexCoordMul>
+  <BranchThinningRate>1.0</BranchThinningRate>
+  <BranchMinAngleRadians>0.3</BranchMinAngleRadians>
+  <BranchMaxAngleRadians>0.6</BranchMaxAngleRadians>
+  <BranchMinRadius>0.001</BranchMinRadius>
+  <BranchAvgFeatureDistance>0.5</BranchAvgFeatureDistance>
+  <BranchSmoothingPercent>0.5</BranchSmoothingPercent>
+  <BranchMaxDirectionVariance>0.15</BranchMaxDirectionVariance>
+  <BranchAvgDistance>0.3</BranchAvgDistance>
+  <SunSearchRate>0.5</SunSearchRate>
+  <BranchDistanceDensityMul>0.5</BranchDistanceDensityMul>
+  <BranchMaxNestingLevel>3</BranchMaxNestingLevel>
+  <BranchMinRadiusPercent>0.5</BranchMinRadiusPercent>
+  <BranchMinLenPercent>0.001</BranchMinLenPercent>
+  <BranchMinTessellationDistance>0.05</BranchMinTessellationDistance>
+  <FoliageLayers>
+    <ProceduralTreeFoliageParams>
+      <Type>Terminal Branching</Type>
+      <FoliageTexCoords>
+        <X>0.6412761</X> <Y>0.3053385</Y> <Width>0.171224</Width> <Height>0.3007813</Height> <Rotation>3.141593</Rotation>
+      </FoliageTexCoords>
+      <Sizes>
+        <X>0.05992839</X> <Y>0.1052734</Y>
+      </Sizes>
+      <FoliageStartCoords>
+        <X>0.5644531</X><Y>0.2954915</Y>
+      </FoliageStartCoords>
+      <Tesselation>
+        <X>2</X>
+        <Y>3</Y>
+      </Tesselation>
+      <BendingPercent>
+        <X>0.2</X>
+        <Y>1.0</Y>
+      </BendingPercent>
+      <FoliageDensity>10.0</FoliageDensity>
+	  <HeightStartPercent>0.5</HeightStartPercent>
+      <BranchFoliagePowerDistribution>2</BranchFoliagePowerDistribution>
+      <Perturbation>0.005</Perturbation>
+      <FoliageMinAngleRadians>0.2</FoliageMinAngleRadians>
+      <FoliageMaxAngleRadians>0.9</FoliageMaxAngleRadians>
+	  <SizeVariationPercent>0.3</SizeVariationPercent>
+    </ProceduralTreeFoliageParams>
+	<ProceduralTreeFoliageParams>
+      <Type>Terminal Branching</Type>
+      <FoliageTexCoords>
+        <X>0.6285807</X> <Y>0.6386719</Y> <Width>0.1503906</Width> <Height>0.2910156</Height> <Rotation>3.141593</Rotation>
+      </FoliageTexCoords>
+	  <FoliageStartCoords>
+        <X>0.5692953</X><Y>0.6282145</Y>
+      </FoliageStartCoords>
+      <Sizes>
+        <X>0.04819336</X> <Y>0.09946289</Y>
+      </Sizes>
+      <Tesselation>
+        <X>2</X>
+        <Y>3</Y>
+      </Tesselation>
+      <BendingPercent>
+        <X>0.2</X>
+        <Y>1.0</Y>
+      </BendingPercent>
+      <FoliageDensity>10.0</FoliageDensity>
+	  <HeightStartPercent>0.5</HeightStartPercent>
+      <BranchFoliagePowerDistribution>2</BranchFoliagePowerDistribution>
+      <Perturbation>0.005</Perturbation>
+      <FoliageMinAngleRadians>0.2</FoliageMinAngleRadians>
+      <FoliageMaxAngleRadians>0.9</FoliageMaxAngleRadians>
+	  <SizeVariationPercent>0.3</SizeVariationPercent>
+    </ProceduralTreeFoliageParams>
+	 <ProceduralTreeFoliageParams>
+      <Type>Terminal Branching</Type>
+      <FoliageTexCoords>
+        <X>0.3005371</X> <Y>0.5338135</Y> <Width>0.09814453</Width> <Height>0.1625976</Height> <Rotation>3.141593</Rotation>
+      </FoliageTexCoords>
+      <Sizes>
+       <X>0.0331543</X> <Y>0.05708008</Y>
+      </Sizes>
+      <FoliageStartCoords>
+        <X>0.2473145</X><Y>0.5250244</Y>
+      </FoliageStartCoords>
+      <Tesselation>
+        <X>2</X>
+        <Y>3</Y>
+      </Tesselation>
+      <BendingPercent>
+        <X>0.2</X>
+        <Y>1.0</Y>
+      </BendingPercent>
+      <FoliageDensity>10.0</FoliageDensity>
+	  <HeightStartPercent>0.5</HeightStartPercent>
+      <BranchFoliagePowerDistribution>2</BranchFoliagePowerDistribution>
+      <Perturbation>0.005</Perturbation>
+      <FoliageMinAngleRadians>0.2</FoliageMinAngleRadians>
+      <FoliageMaxAngleRadians>0.9</FoliageMaxAngleRadians>
+	  <SizeVariationPercent>0.3</SizeVariationPercent>
+    </ProceduralTreeFoliageParams>
+	<ProceduralTreeFoliageParams>
+      <Type>Terminal Branching</Type>
+      <FoliageTexCoords>
+        <X>0.1875</X> <Y>0.9853516</Y> <Width>0.1748047</Width> <Height>0.3017578</Height> <Rotation>3.141593</Rotation>
+      </FoliageTexCoords>
+	  <FoliageStartCoords>
+        <X>0.1002604</X><Y>0.976237</Y>
+      </FoliageStartCoords>
+      <Sizes>
+        <X>0.05554199</X> <Y>0.1044189</Y>
+      </Sizes>
+      <Tesselation>
+        <X>2</X>
+        <Y>3</Y>
+      </Tesselation>
+      <BendingPercent>
+        <X>0.2</X>
+        <Y>1.0</Y>
+      </BendingPercent>
+      <FoliageDensity>10.0</FoliageDensity>
+	  <HeightStartPercent>0.5</HeightStartPercent>
+      <BranchFoliagePowerDistribution>2</BranchFoliagePowerDistribution>
+      <Perturbation>0.005</Perturbation>
+      <FoliageMinAngleRadians>0.2</FoliageMinAngleRadians>
+      <FoliageMaxAngleRadians>0.9</FoliageMaxAngleRadians>
+	  <SizeVariationPercent>0.3</SizeVariationPercent>
+    </ProceduralTreeFoliageParams>
+  </FoliageLayers>
+  <FoliageMaterial>
+    <Albedo>
+      <X>1</X>
+      <Y>1</Y>
+      <Z>1</Z>
+    </Albedo>
+    <AlbedoMapPath>textures/models/proc/leaves1_albedo.dds</AlbedoMapPath>
+    <UseTransparencyFromAlbedo>false</UseTransparencyFromAlbedo>
+    <ClipTransparency>true</ClipTransparency>
+    <NormalMapPath>textures/models/proc/leaves1_norm.dds</NormalMapPath>
+	<RoughtnessMap>textures/models/proc/leaves1_rough.dds</RoughtnessMap>
+	<TranslucencyMap>textures/models/proc/leaves1_transl.dds</TranslucencyMap>
+    <Roughness>0.4</Roughness>
+    <RoughtnessMap />
+    <DoubleSided>true</DoubleSided>
+  </FoliageMaterial>
+</ProceduralMeshDescription>

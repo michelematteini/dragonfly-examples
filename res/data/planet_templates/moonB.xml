@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FractalPlanetParams xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<MinRadius>650500</MinRadius>
+	<MaxRadius>1150501</MaxRadius>
+	<AtmoParams>
+		<Density>0.0</Density>
+		<HalfDensityHeightOverPlanetRadius>0.1</HalfDensityHeightOverPlanetRadius >
+		<DustDensity>0.5</DustDensity>
+		<HalfDustDensityHeightOverPlanetRadius>0.03</HalfDustDensityHeightOverPlanetRadius>
+		<DustAlbedo>
+			<X>0.7450981</X>
+			<Y>0.627451</Y>
+			<Z>0.4509804</Z>
+		</DustAlbedo>
+	</AtmoParams>
+	<FractalParams>
+		<OceanAvgDepthMeters>8000.0</OceanAvgDepthMeters>
+		<OceanMaxDepthMeters>10000.0</OceanMaxDepthMeters>
+		<OceanPercent>0.40</OceanPercent>
+		<DepthVariance>0.10</DepthVariance>
+		<ContinentAvgHeightMeters>100.0</ContinentAvgHeightMeters>
+		<PeaksMaxHeightMeters>8000.0</PeaksMaxHeightMeters>
+		<ContinentMaxSizeMeters>208500.0</ContinentMaxSizeMeters>
+		<PeaksPercent>0.10</PeaksPercent>
+		<FeaturesMaxExtensionMeters>3000.0</FeaturesMaxExtensionMeters>
+		<FeaturesMinExtensionMeters>0.05</FeaturesMinExtensionMeters>
+		<FeaturesOceanHeightPercent>0.1</FeaturesOceanHeightPercent>
+		<FeaturesHighAltitudeHeightPercent>0.1</FeaturesHighAltitudeHeightPercent>
+		<FeaturesSeaLevelHeightMeters>100</FeaturesSeaLevelHeightMeters>
+		<FeaturesReferenceAltitude>8000</FeaturesReferenceAltitude>
+		<FeaturesOceanReferenceDepth>5000</FeaturesOceanReferenceDepth>
+		<FeaturesCliffHighAltitudeMinHeight>0.10</FeaturesCliffHighAltitudeMinHeight>
+		<FeaturesCliffOceanMinHeight>0.50</FeaturesCliffOceanMinHeight>
+		<FeaturesCliffSeaLevelMinHeight>0.40</FeaturesCliffSeaLevelMinHeight>
+		<FeaturesCliffHighAltitudeMaxHeight>7.0</FeaturesCliffHighAltitudeMaxHeight>
+		<FeaturesCliffOceanMaxHeight>7.0</FeaturesCliffOceanMaxHeight>
+		<FeaturesCliffSeaLevelMaxHeight>3.0</FeaturesCliffSeaLevelMaxHeight>
+		<FeaturesExponent>2</FeaturesExponent>
+		<FeaturesHighPassPercent>0.45</FeaturesHighPassPercent>
+		<FeaturesCliffHighPassPercent>0.55</FeaturesCliffHighPassPercent>
+		<AlbedoLUTPath>textures/terrain/lut/terrainAlbedo2.png</AlbedoLUTPath>wwd
+		<AlbedoLUTCompression>200</AlbedoLUTCompression>
+	</FractalParams>
+</FractalPlanetParams>

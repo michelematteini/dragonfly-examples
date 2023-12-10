@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FractalPlanetParams xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<MinRadius>650500</MinRadius>
+	<MaxRadius>1150501</MaxRadius>
+	<AtmoParams>
+		<Density>0.0</Density>
+		<HalfDensityHeightOverPlanetRadius>0.1</HalfDensityHeightOverPlanetRadius >
+	</AtmoParams>
+	<FractalParams>
+		<OceanAvgDepthMeters>600.0</OceanAvgDepthMeters>
+		<OceanMaxDepthMeters>6000.0</OceanMaxDepthMeters>
+		<OceanPercent>0.30</OceanPercent>
+		<DepthVariance>0.05</DepthVariance>
+		<ContinentAvgHeightMeters>3800.0</ContinentAvgHeightMeters>
+		<PeaksMaxHeightMeters>8000.0</PeaksMaxHeightMeters>
+		<ContinentMaxSizeMeters>1508500.0</ContinentMaxSizeMeters>
+		<PeaksPercent>0.50</PeaksPercent>
+		<FeaturesMaxExtensionMeters>3000.0</FeaturesMaxExtensionMeters>
+		<FeaturesMinExtensionMeters>0.05</FeaturesMinExtensionMeters>
+		<FeaturesOceanHeightPercent>0.1</FeaturesOceanHeightPercent>
+		<FeaturesHighAltitudeHeightPercent>0.60</FeaturesHighAltitudeHeightPercent>
+		<FeaturesSeaLevelHeightMeters>2500</FeaturesSeaLevelHeightMeters>
+		<FeaturesReferenceAltitude>4000</FeaturesReferenceAltitude>
+		<FeaturesOceanReferenceDepth>5000</FeaturesOceanReferenceDepth>
+		<FeaturesCliffHighAltitudeMinHeight>0.10</FeaturesCliffHighAltitudeMinHeight>
+		<FeaturesCliffOceanMinHeight>0.50</FeaturesCliffOceanMinHeight>
+		<FeaturesCliffSeaLevelMinHeight>0.40</FeaturesCliffSeaLevelMinHeight>
+		<FeaturesCliffHighAltitudeMaxHeight>7.0</FeaturesCliffHighAltitudeMaxHeight>
+		<FeaturesCliffOceanMaxHeight>7.0</FeaturesCliffOceanMaxHeight>
+		<FeaturesCliffSeaLevelMaxHeight>3.0</FeaturesCliffSeaLevelMaxHeight>
+		<FeaturesExponent>4</FeaturesExponent>
+		<FeaturesHighPassPercent>0.45</FeaturesHighPassPercent>
+		<FeaturesCliffHighPassPercent>0.55</FeaturesCliffHighPassPercent>
+		<AlbedoLUTPath>textures/terrain/lut/terrainAlbedo2.png</AlbedoLUTPath>
+		<AlbedoLUTCompression>2500</AlbedoLUTCompression>
+	</FractalParams>
+</FractalPlanetParams>

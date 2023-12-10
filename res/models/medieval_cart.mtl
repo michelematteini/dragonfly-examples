@@ -1,0 +1,6 @@
+newmtl initialShadingGroup
+illum 4
+Kd 0.7 0.7 0.7
+Ns 1
+map_Kd textures\models\medieval_cart\cart_lp.dds
+norm textures\models\medieval_cart\cart_nrm.dds

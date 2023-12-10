@@ -1,0 +1,6 @@
+newmtl initialShadingGroup
+illum 4
+Kd 1.0 1.0 1.0
+Ns 1
+map_Kd textures\models\medieval_house\Medieval_House_Diff.dds
+norm textures\models\medieval_house\Medieval_House_Nor.dds

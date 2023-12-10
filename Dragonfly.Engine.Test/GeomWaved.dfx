@@ -1,0 +1,20 @@
+﻿shader: GeomWaved;
+
+using ScreenSpace;
+using VertexBaking;
+
+
+PS RT_FLOAT4 GeomWaved(POS4_TEX_NORM IN)
+{
+	POS3_TEX_NORM OUT = (POS3_TEX_NORM)0;
+	float2 uv = GetVertexUV(IN.texCoords);
+
+	float waves = sin(uv.x * 40) * sin(uv.y * 40) * 5.0;
+	OUT.position = float3(100 * uv.x, waves, 100 * uv.y);
+	OUT.texCoords = uv;
+	OUT.normal = float3(0, 1, 0);
+	
+	return OutputVertex(OUT, IN.texCoords);
+}
+
+effect GeomWaved {VS = ScreenPass, PS = GeomWaved};

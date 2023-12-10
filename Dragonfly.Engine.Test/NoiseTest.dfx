@@ -1,0 +1,89 @@
+﻿shader: NoiseTest;
+
+using Core;
+using Noise;
+using PerlinNoise;
+using SimplexNoise;
+using TemplScreenColor;
+using Time;
+using NormalMaps;
+using TerraNoise;
+using MRidgeNoise;
+using Gradients;
+using SparseNoise;
+
+float4 noiseDistr;
+int noiseType;
+variant noiseOutputType: ValueOutput, NormalsOutput, SlopeOutput;
+
+POS3_TEX_NORM GetVertexData(vertex_t IN)
+{
+	return IN;
+}
+
+float4 GetNoise(float3 position)
+{
+	float4 noise = (float4)0;
+
+	if (noiseType == 0)
+	{
+		noise = NoiseDistributionDDX(position, noiseDistr, 0);
+	}
+	else if (noiseType == 1)
+	{
+		noise = PerlinNoiseDistributionDDX(position, noiseDistr, 0);
+	}
+	else if (noiseType == 2)
+	{
+		noise = SimplexNoiseDistributionDDX(position, noiseDistr, 0);
+	}
+	else if (noiseType == 3)
+	{
+		float4 m = float4(0.8, 0.6, 0.4, 0.0);
+		float4 terra = TerraNoiseDistributionDDX(position, noiseDistr, float4(0.7, 0.1, 400.0, 0.56), m, 0);
+		noise = GradOffset(terra, m[0] * m[1]);
+	}
+	else if (noiseType == 4)
+	{
+		float4 displacement = NoiseDistributionDDX(position, noiseDistr, 0);
+		float displAmount = 2 * displacement.w * OctaveToCoordMul(-GetDistrStartOctave(noiseDistr));
+		noise = NoiseDistributionDDX(position + float3(displAmount, 0, displAmount), noiseDistr, 0);
+	}
+	else if (noiseType == 5)
+	{
+		noise = MRidgeNoiseDistributionDDX(position, noiseDistr, 16.0, 1.0, 0);
+	}
+	else if (noiseType == 6)
+	{
+		noise = SparseNoiseDistributionDDX(position, noiseDistr, 0.2, 0);
+	}
+
+	return noise;
+}
+
+float4 GetPixelColor(POS4_TEX_NORM IN)
+{
+	float2 p = IN.texCoords / PIX_SIZE - 0.5;
+	float octaveMul = OctaveToCoordMul(GetDistrStartOctave(noiseDistr));
+	float3 coords = float3(p.x, 0.5 * GetSeconds() / octaveMul, p.y);
+	float4 noise = GetNoise(coords);
+	noise.xyz /= octaveMul;
+
+		
+#if noiseOutputType == ValueOutput
+	return float4(noise.www, 1.0);
+#endif
+	
+#if noiseOutputType == NormalsOutput
+	return NormalTanSpaceToMap(GradToNormal(noise, float3(1, 0, 0), float3(0, 0, 1)).xzy);
+#endif
+
+#if noiseOutputType == SlopeOutput
+	float3 normal = GradToNormal(noise, float3(1, 0, 0), float3(0, 0, 1));
+	return float4((float3)(1.0 - normal.y * normal.y), 1.0);
+#endif
+}
+
+effect NoiseTest : ScreenColor(POS3_TEX_NORM);
+
+

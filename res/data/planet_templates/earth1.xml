@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FractalPlanetParams xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<MinRadius>3400000</MinRadius>
+	<MaxRadius>9400000</MaxRadius>
+	<AtmoParams>
+		<Density>1.0</Density>
+		<HalfDensityHeightOverPlanetRadius>0.001</HalfDensityHeightOverPlanetRadius >
+	</AtmoParams>
+	<FractalParams>
+		<OceanAvgDepthMeters>2000</OceanAvgDepthMeters>
+		<OceanMaxDepthMeters>10000</OceanMaxDepthMeters>
+		<OceanPercent>0.60</OceanPercent>
+		<DepthVariance>0.40</DepthVariance>
+		<ContinentAvgHeightMeters>300</ContinentAvgHeightMeters>
+		<PeaksMaxHeightMeters>10000</PeaksMaxHeightMeters>
+		<ContinentMaxSizeMeters>3250000</ContinentMaxSizeMeters>
+		<PeaksPercent>0.05</PeaksPercent>
+		<FeaturesMaxExtensionMeters>3000</FeaturesMaxExtensionMeters>
+		<FeaturesMinExtensionMeters>0.05</FeaturesMinExtensionMeters>
+		<FeaturesOceanHeightPercent>0.2</FeaturesOceanHeightPercent>
+		<FeaturesHighAltitudeHeightPercent>0.7</FeaturesHighAltitudeHeightPercent>
+		<FeaturesSeaLevelHeightMeters>200.0</FeaturesSeaLevelHeightMeters>
+		<FeaturesReferenceAltitude>5000</FeaturesReferenceAltitude>
+		<FeaturesOceanReferenceDepth>10000</FeaturesOceanReferenceDepth>
+		<FeaturesCliffHighAltitudeMinHeight>0.5</FeaturesCliffHighAltitudeMinHeight>
+		<FeaturesCliffOceanMinHeight>0.5</FeaturesCliffOceanMinHeight>
+		<FeaturesCliffSeaLevelMinHeight>0.54</FeaturesCliffSeaLevelMinHeight>
+		<FeaturesCliffHighAltitudeMaxHeight>3.5</FeaturesCliffHighAltitudeMaxHeight>
+		<FeaturesCliffOceanMaxHeight>4.0</FeaturesCliffOceanMaxHeight>
+		<FeaturesCliffSeaLevelMaxHeight>5.0</FeaturesCliffSeaLevelMaxHeight>
+		<FeaturesExponent>3</FeaturesExponent>
+		<FeaturesHighPassPercent>0.45</FeaturesHighPassPercent>
+		<FeaturesCliffHighPassPercent>0.55</FeaturesCliffHighPassPercent>
+		<AlbedoLUTPath>textures/terrain/lut/terrainAlbedo1.png</AlbedoLUTPath>
+		<AlbedoLUTCompression>400</AlbedoLUTCompression>
+	</FractalParams>
+</FractalPlanetParams>
