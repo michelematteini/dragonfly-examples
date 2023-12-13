@@ -83,6 +83,14 @@ namespace Dragonfly.Engine.Test
             canvas.RenderOnMainThread = true;
             canvas.Size = pnlTests.Size;
             canvas.StartupPath = PathEx.DefaultResourceFolder;
+
+            if (canvas.StartupPath == null)
+            {
+                MessageBox.Show("Failed to find a resource folder (/res) in the current folder or in any onther folder above this level.", "Loading Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Close();
+                return;
+            }
+
             canvas.TabIndex = 1;
             canvas.Visible = false;
             canvas.SceneSetup += Canvas_SceneSetup;

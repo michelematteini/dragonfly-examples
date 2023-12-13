@@ -8,7 +8,11 @@ namespace Dragonfly.Engine.Test
         [STAThread]
         private static void Main(string[] args)
         {
-            Application.Run(new FrmTestGUI());
+            Form mainForm = new FrmTestGUI();
+            if (!mainForm.IsDisposed)
+            {
+                Application.Run(mainForm);
+            }
         }
     }
 }
