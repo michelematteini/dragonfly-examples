@@ -1,2 +1,2 @@
 # dragonfly-examples
-Examples and demo for the dragonfly engine.
+Examples and demos for the dragonfly engine project.
